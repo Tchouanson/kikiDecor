@@ -1,0 +1,55 @@
+.bottom{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin:auto ;
+
+}
+
+.bottom h3{
+    color: grey;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+p{
+    color: #777;
+}
+
+.foot p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom .foot-icons a{
+    color: #f44336;
+    padding:1rem 1rem;
+}
+
+.fa-heart{
+    color: #f44336;
+}
+
+
+@media(max-width:768px){
+    .bottom{
+        flex-flow: column;
+    }
+
+    .bottom h3{
+        text-align: center;
+    }
+    .foot-icons{
+        padding:2rem 0;
+    }
+
+ 
+}

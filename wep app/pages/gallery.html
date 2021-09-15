@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Planning Website</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <section class="header">
+        <div id="nav-bar"></div>
+       <script>
+        $(function(){
+          $("#nav-bar").load("navbar.html")
+        });
+        </script>
+
+       <div class="text-box">
+           <h1>Gallery</h1>
+       </div>
+    </section>
+
+
+<section class="carousel">
+  <div class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="gallery-filter">
+          <span class="filter-item active" data-filter="all">ALL</span>
+          <span class="filter-item" data-filter="wedding">WEDDING</span>
+          <span class="filter-item" data-filter="birthday">BIRTHDAY</span>
+          <span class="filter-item" data-filter="baptism">BAPTISM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+    <div class="row">
+      <div class="gallery-item wedding">
+        <div class="gallery-item-inner">
+          <img src="../images/modified/abby-savage.jpg" alt="wedding">
+        </div>
+      </div>
+
+      <div class="gallery-item birthday">
+        <div class="gallery-item-inner">
+          <img src="../images/modified/andrew-knechel.jpg" alt="birthday">
+        </div>
+      </div>
+
+      <div class="gallery-item baptism">
+        <div class="gallery-item-inner">
+          <img src="../images/flower.jpg" alt="baptism">
+        </div>
+      </div>
+
+      <div class="gallery-item wedding">
+        <div class="gallery-item-inner">
+          <img src="../images/modified/arshad-pooloo-GdwWrLHdwpw-unsplash.jpg" alt="wedding">
+        </div>
+      </div>
+
+      <div class="gallery-item birthday">
+        <div class="gallery-item-inner">
+          <img src="../images/modified/ben-rosett.jpg" alt="birthday">
+        </div>
+      </div>
+
+      <div class="gallery-item baptism">
+        <div class="gallery-item-inner">
+          <img src="../images/modified/daniel-olah.jpg" alt="baptism">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  </div>
+
+</section>
+
+    
+   <section class="footer">
+    <div id="footer"></div>
+       <script>
+        $(function(){
+          $("#footer").load("footer.html")
+        });
+        </script>
+
+        <script src="../js/gallery.js"></script>
+</section>
+
+
+</body>
+</html>

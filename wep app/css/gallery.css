@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.carousel{
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/guanfranco-g-82p7JgzKOpo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: palevioletred;
+    position: relative;
+}
+
+@media(max-width:1024px){
+    .text-box h1{
+        padding-top: 100px;
+    }
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+
+.container{
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.gallery{
+    width: 100%;
+    display: block;
+    min-height: 50vh;
+    background-color: gainsboro;
+    padding: 100px 0;
+}
+
+.gallery .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.gallery .gallery-filter .filter-item{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-filter .filter-item:hover{
+    border-radius: 100px;
+    background:whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-filter .filter-item.active{
+    color: palevioletred;
+}
+
+.gallery .gallery-item{
+    width: calc(100% / 4);
+    padding: 15px;
+}
+
+.gallery .gallery-item-inner img{
+    width: 100%;
+}
+
+.gallery .gallery-item.show{
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.gallery .gallery-item.hide{
+    display: none;
+}
+
+
+@media(max-width: 1024px){
+    .gallery .gallery-item{
+        width: 100%;
+        width: calc(100% / 4);
+        padding: 15px;
+    }
+
+    
+}
+
+@media(max-width: 700px){
+    .gallery .gallery-item{
+        width: 100%;
+    }
+
+    .gallery .gallery-filter .filter-item{
+        margin-bottom: 10px;
+    }
+
+    .center{
+        margin: auto;
+    }
+}

@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/abby-savage-zNsSwsuyP3A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 65px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.btn-home{
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+}
+
+
+.btn-home:hover,.btn-read:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+@media(max-width :768px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+
+}
+
+/* services*/
+
+.services{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.row{
+    margin-top: 5%;
+    justify-content:space-between;
+    padding: 5px;
+}
+
+.row-1{
+    order:1;
+}
+
+.row-3{
+    order:3;
+}
+
+.row-2{
+    order:2;
+}
+
+.service-col{
+    flex-basis: 31%;
+    background: gainsboro;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.service-col p{
+    padding: 0;
+    text-align: left;
+}
+
+.service-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.services-img{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-img img{
+    width: 95%;
+    display: block;
+    border-radius: 10px;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(182, 157, 157, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+ @media (max-width:768px) {
+     .container{
+         flex-direction: column;
+     }
+ }
+
+ /* about us */
+ .about-us{
+     width: 100%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background:transparent;
+ }
+
+ .btn-read{
+    display: inline-block;
+    text-decoration: none;
+    background: black;
+    position: relative;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    margin: 20px;
+    font-size: 13px;
+ }
+
+ #box-about{
+     width: 80%;
+     margin: auto;
+ }
+
+/* testimonials */
+.testimonials{
+width: 100%;
+margin: 20px 0 0 0;
+padding-top: 100px;
+text-align: center;
+position: relative;
+background-image: url(../images/flower.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+.content-testimonial{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-height: 50vh;
+}
+
+.testimonials .content-testimonial .content{
+animation:slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+.content{
+    display: none;
+    
+}
+
+.content.active{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#prev, #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    color: black;
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#prev:hover , #next:hover{
+    background: gainsboro;
+}
+
+#prev{
+    left: 20px;
+}
+
+#next{
+    right: 20px;
+}
+
+@media (max-width:768px){
+    #prev{
+        left: 0px;
+    }
+
+    #next{
+        right:0px;
+    }
+}
+
+

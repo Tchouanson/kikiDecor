@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Planning Website</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/Services.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    
+    
+        <section class="header">
+            <div id="nav-bar"></div>
+           <script>
+            $(function(){
+              $("#nav-bar").load("navbar.html")
+            });
+            </script>
+    
+           <div class="text-box">
+               <h1>Services</h1>
+           </div>
+        </section>
+    
+
+
+        <section class="slideShow">
+            <div class="container">
+            <div class="content active">
+                <img src="../images/modified/thomas-william.jpg" alt="">
+            </div>
+    
+            <div class="content">
+                <img src="../images/modified/arshad-pooloo-GdwWrLHdwpw-unsplash.jpg" alt="">
+            </div>
+    
+            <div class="content">
+                <img src="../images/modified/daniel-olah.jpg" alt="">
+            </div>
+        </div>
+    
+        <div id="prev" onclick="prev()">&#10094; </div>
+        <div id="next" onclick="next()"> &#10095;</div>
+        </section>
+
+
+        <section class="service">
+                <div class="service-col1">
+                    <h1>The perfect choice for your events</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur quisquam.
+                          <br> Voluptatem at quaerat nostrum sed numquam nobis provident eum explicabo voluptatibus. 
+                          <br> Cupiditate ipsum delectus non ea eveniet minus deleniti!</p>
+                </div>
+    
+            <div class="service-col2">
+                <img src="../images/modified/shardayyy-photography.jpg" alt="">
+            </div>
+        </section>
+    
+
+        <section class="service">
+
+            <div class="service-col4">
+                <img src="../images/modified/shardayyy-photography.jpg" alt="">
+            </div>
+
+                <div class="service-col3">
+                    <h1>The perfect choice for your events</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur quisquam.
+                          <br> Voluptatem at quaerat nostrum sed numquam nobis provident eum explicabo voluptatibus. 
+                          <br> Cupiditate ipsum delectus non ea eveniet minus deleniti!</p>
+                </div>
+        </section>
+
+        <section class="service">
+                <div class="service-col1">
+                    <h1>The perfect choice for your events</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur quisquam.
+                          <br> Voluptatem at quaerat nostrum sed numquam nobis provident eum explicabo voluptatibus. 
+                          <br> Cupiditate ipsum delectus non ea eveniet minus deleniti!</p>
+                </div>
+            
+    
+            <div class="service-col2">
+                <img src="../images/modified/shardayyy-photography.jpg" alt="">
+            </div>
+        </section>
+
+
+        <script src="../js/testimonialSlide.js"></script>
+
+
+   <section class="footer">
+    <div id="footer"></div>
+       <script>
+        $(function(){
+          $("#footer").load("footer.html")
+        });
+        </script>
+</section>
+
+
+</body>
+</html>

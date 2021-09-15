@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/kaneki_ghoul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.submit{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 0px 10px 0 #000;
+    align-items: center;
+}
+
+
+.submit h1{
+    font-size: 65px;
+}
+
+.submit p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.btn-home{
+    display: inline-block;
+    text-decoration: none;
+    background: black;
+    position: relative;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    
+}
+
+
+.btn-home:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+@media(max-width:500px){
+    .submit h1{
+        font-size: 30px;
+    }
+}

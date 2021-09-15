@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Planning Website</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <section class="header">
+        <div id="nav-bar"></div>
+       <script>
+        $(function(){
+          $("#nav-bar").load("navbar.html")
+        });
+        </script>
+
+       <div class="text-box">
+           <h1>Contact Us</h1>
+       </div>
+    </section>
+
+
+<section class="contact">
+  <div class="container">  
+    <div class="contact-form">
+      <h1><i class="fas fa-paper-plane"></i></h1>
+      <form action="https://formsubmit.co/e40353990bb25daadb56d0c2b99887b0" method="POST">
+        <!-- Honey Pot -->
+        <input type="text" name="_honey" style="display: none;">
+        <!-- disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- success message link -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html">
+
+      <input type="text" class="form" name="name" placeholder="Name" required>
+      <input type="email" class="form" name="email" placeholder="email" required>
+      <input type="tel" class="form" name="phone" pattern="[6]{1}[0-9]{8}"
+      placeholder="phone number ex:699999999" required>
+      <input type="text" class="form" name="type of event" placeholder="event type" required>
+      <textarea class="form-area" name="message" placeholder="message"></textarea>
+      <button type="submit" class="form-btn">Submit</button>  
+    </form>
+    </div>
+
+    <div class="contact-map">
+      <iframe src="https://goo.gl/maps/vhtLfnnmh5iBbzTD9" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    
+   <section class="footer">
+    <div id="footer"></div>
+       <script>
+        $(function(){
+          $("#footer").load("footer.html")
+        });
+        </script>
+</section>
+
+
+</body>
+</html>
+

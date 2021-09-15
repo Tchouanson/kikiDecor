@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Planning Website</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+    <!--Header Image with Navigation bar-->
+    <section class="header">
+        
+       <div id="nav-bar"></div>
+       <script>
+        $(function(){
+          $("#nav-bar").load("navbar.html")
+        });
+        </script>
+
+       <div class="text-box">
+           <h1>Kiki Decoration</h1>
+           <p>UNPARALLELED, STRESS-FREE.</p>
+           <a href="tel:+237656773874" class="btn-home"><strong> <i class="fas fa-phone-alt"></i> CALL NOW </i></strong></a>
+       </div>
+   </section>
+
+   
+    <!--Services offered-->
+
+    <section class="services">
+        <h1>Some Services Offered</h1>
+<div class="container">
+        <div class="row row-1">
+            <div class="service-col">
+                 <div class="services-img">
+            <img src="../images/modified/ben-rosett.jpg" alt="">
+            <div class="layer">
+                <h3>CORPORATE EVENTS</h3>
+            </div>
+        </div>
+                <p>
+                    Wow your guests with a unique experience that aligns with your company's mission and elevates your brand.
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-2">
+            <div class="service-col">
+                <div class="services-img">
+            <img src="../images/modified/andrew-knechel.jpg" alt="">
+            <div class="layer">
+                <h3>BIRTHDAY</h3>
+            </div>
+        </div>
+                <p>
+                    From a show stopping engagement celebration to an epic surprise birthday party, you dream it and we'll make it a reality
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-3">
+            <div class="service-col">
+               <div class="services-img">
+            <img src="../images/modified/abby-savage.jpg" alt="">
+            <div class="layer">
+                <h3>WEDDING</h3>
+            </div>
+        </div>
+                <p>
+                    With every last detail taken care of, we're here to ensure the day you've always dreamed of will be the day you'll never forget.
+            </p>
+            </div>
+        </div>
+
+        <!-- <div class="services-img">
+            <img src="../images/modified/abby-savage.jpg" alt="">
+            <div class="layer">
+                <h3>Marriage</h3>
+            </div>
+        </div>
+
+        <div class="services-img">
+            <img src="../images/modified/andrew-knechel.jpg" alt="">
+            <div class="layer">
+                <h3>Birthday</h3>
+            </div>
+        </div>
+
+        <div class="services-img">
+            <img src="../images/modified/ben-rosett.jpg" alt="">
+            <div class="layer">
+                <h3>Baptism</h3>
+            </div>
+        </div> -->
+    </div>
+    </section>
+
+    <!-- about us -->
+    <section class="about-us">
+        <h1>EVENT DECORATION</h1>
+
+        <div id="box-about">
+            <p>The Infinity experience is unlike any other. Our team will guide you every step of the way, ensuring a stress-free experience from start to finish.</p>
+        <p>With us, customization is guaranteed. From the very beginning, we will create a custom proposal tailored to your specific wants and needs. You'll be paired with an Infinity Event Team who will collaborate with you to bring your vision to life. </p>
+        <p>When it’s showtime, our staff will work tirelessly to guarantee your event is effortless and unforgettable.</p>
+
+        
+        <a href="aboutUs.html" class="btn-read"><strong> Read More</strong></a>
+    </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="testimonials">
+        <p>TESTIMONIALS FROM OUR</p>
+        <h1>HAPPY CLIENTS </h1>
+        <div class="content-testimonial">
+        <div class="content active">
+            <p>The staff, the venue, the whole process and having my wedding and reception was absolutely amazing! Everything turned out beautifully, it was even better than I imagined</p>
+        <h3>Hilary</h3>
+        </div>
+
+        <div class="content">
+            <p>The staff was incredible and the evening was simply magical! Our event coordinator made it exactly how we wanted, and we could not have had a more wonderful experience. I was so relaxed and confident in my coordinator and our choices. This was huge in that I planned everything from out of town.</p>
+        <h3>Paul</h3>
+        </div>
+
+        <div class="content">
+            <p>Infinity was able to give my husband and I the wedding of our dreams! They did an amazing job and I would highly recommend them to anyone!...My husband and I could not be happier with how our big day turned out and are so glad we were able to enjoy it with our family and friends!</p>
+        <h3>Jenna</h3>
+        </div>
+    </div>
+
+    <div id="prev" onclick="prev()"> < </div>
+    <div id="next" onclick="next()"> > </div>
+    </section>
+
+<!-- Footer -->
+<section class="footer">
+    <div id="footer"></div>
+       <script>
+        $(function(){
+          $("#footer").load("footer.html")
+        });
+        </script>
+</section>
+
+
+<script src="../js/testimonialSlide.js"></script>
+<script>
+</script>
+</body>
+</html>
